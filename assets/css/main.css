@@ -1768,37 +1768,24 @@ input, select, textarea {
     margin-top: 10px; /* Adds space above the name */
     display: inline-block; /* Make it an inline-block for better spacing control */
     position: relative; /* For the glitter effect */
-    animation: glitter 1.5s infinite; /* Animation for glittering effect */
+    animation: glitter 2s infinite; /* Slower animation for a subtler effect */
 }
 
-/* Glittering effect */
+/* Updated Glittering effect */
 @keyframes glitter {
     0% {
         text-shadow: 
-            0 0 5px #ffffff, 
-            0 0 10px #ffffff, 
-            0 0 15px #ffcc00, 
-            0 0 20px #ffcc00, 
-            0 0 30px #ffcc00, 
-            0 0 40px #ffcc00;
+            0 0 2px rgba(200, 175, 150, 0.4), /* Soft light color */
+            0 0 5px rgba(200, 175, 150, 0.4); /* Soft glow */
     }
     50% {
         text-shadow: 
-            0 0 5px #ffffff, 
-            0 0 10px #ffffff, 
-            0 0 15px #ffcc00, 
-            0 0 20px #ffcc00, 
-            0 0 30px #ffcc00, 
-            0 0 40px #ffcc00,
-            0 0 60px #ffcc00; /* Increase the glow */
+            0 0 3px rgba(200, 175, 150, 0.6), /* Slightly stronger light */
+            0 0 8px rgba(200, 175, 150, 0.6); /* More pronounced glow */
     }
     100% {
         text-shadow: 
-            0 0 5px #ffffff, 
-            0 0 10px #ffffff, 
-            0 0 15px #ffcc00, 
-            0 0 20px #ffcc00, 
-            0 0 30px #ffcc00, 
-            0 0 40px #ffcc00;
+            0 0 2px rgba(200, 175, 150, 0.4), /* Soft light color */
+            0 0 5px rgba(200, 175, 150, 0.4); /* Soft glow */
     }
 }
