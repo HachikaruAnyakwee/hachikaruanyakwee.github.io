@@ -1730,7 +1730,7 @@ input, select, textarea {
 .download-container {
     display: flex;
     justify-content: center; /* Center the buttons */
-    gap: 40px; /* Adds space between them */
+    gap: 60px; /* Adds space between them */
     margin-top: 30px;
 }
 
