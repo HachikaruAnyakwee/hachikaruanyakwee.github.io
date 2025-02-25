@@ -1730,23 +1730,26 @@ input, select, textarea {
 .download-container {
     display: flex;
     justify-content: center; /* Center the buttons */
-    gap: 40px; /* ✅ Adds space between them */
+    gap: 40px; /* Adds space between them */
     margin-top: 30px;
 }
 
 .download-btn {
-    background-color: chocolate; /* ✅ Set button color to chocolate */
+    background-color: chocolate; /* Set button color to chocolate */
     color: white;
-    padding: 12x 20px; /* ✅ Reduced padding (20% smaller) */
-    font-size: 0.9em; /* ✅ Reduce font size slightly */
-    font-weight: normal;
+    padding: 12px 20px; /* Set padding to give space inside the button */
+    font-size: 1em; /* Set a slightly larger font size for better readability */
+    font-weight: bold; /* Use bold font for emphasis */
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease-in-out;
+    display: inline-block; /* Ensure the button behaves like a block element for better styling */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
 
 .download-btn:hover {
-    background-color: #a0522d; /* ✅ Darker chocolate on hover */
+    background-color: #a0522d; /* Darker chocolate on hover */
+    transform: translateY(-2px); /* Lift the button on hover */
 }
 
 /* About me Picture container */
