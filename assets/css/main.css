@@ -1730,23 +1730,26 @@ input, select, textarea {
 .download-container {
     display: flex;
     justify-content: center; /* Center the buttons */
-    gap: 40px; /* ✅ Adds space between them */
+    gap: 60px; /* Adds space between them */
     margin-top: 30px;
 }
 
 .download-btn {
-    background-color: chocolate; /* ✅ Set button color to chocolate */
+    background-color: chocolate; /* Set button color to chocolate */
     color: white;
-    padding: 12x 20px; /* ✅ Reduced padding (20% smaller) */
-    font-size: 0.9em; /* ✅ Reduce font size slightly */
-    font-weight: normal;
+    padding: 12px 20px; /* Set padding to give space inside the button */
+    font-size: 1em; /* Set a slightly larger font size for better readability */
+    font-weight: bold; /* Use bold font for emphasis */
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease-in-out;
+    display: inline-block; /* Ensure the button behaves like a block element for better styling */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
 
 .download-btn:hover {
-    background-color: #a0522d; /* ✅ Darker chocolate on hover */
+    background-color: #a0522d; /* Darker chocolate on hover */
+    transform: translateY(-2px); /* Lift the button on hover */
 }
 
 /* About me Picture container */
@@ -1758,4 +1761,31 @@ input, select, textarea {
     display: block;
     margin: 0 auto;
     object-fit: cover;
+}
+
+/* Homepage added effects for serenre */
+.name {
+    margin-top: 10px; /* Adds space above the name */
+    display: inline-block; /* Make it an inline-block for better spacing control */
+    position: relative; /* For the glitter effect */
+    animation: glitter 2s infinite; /* Slower animation for a subtler effect */
+}
+
+/* Updated Glittering effect */
+@keyframes glitter {
+    0% {
+        text-shadow: 
+            0 0 2px rgba(200, 175, 150, 0.4), /* Soft light color */
+            0 0 5px rgba(200, 175, 150, 0.4); /* Soft glow */
+    }
+    50% {
+        text-shadow: 
+            0 0 3px rgba(200, 175, 150, 0.6), /* Slightly stronger light */
+            0 0 8px rgba(200, 175, 150, 0.6); /* More pronounced glow */
+    }
+    100% {
+        text-shadow: 
+            0 0 2px rgba(200, 175, 150, 0.4), /* Soft light color */
+            0 0 5px rgba(200, 175, 150, 0.4); /* Soft glow */
+    }
 }
